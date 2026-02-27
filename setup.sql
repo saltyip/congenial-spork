@@ -1,6 +1,6 @@
 CREATE TABLE urls (
     id SERIAL PRIMARY KEY,
-    short_code VARCHAR(10) UNIQUE NOT NULL,
+    short_code VARCHAR(10) UNIQUE,
     original_url TEXT NOT NULL,
     clicks INTEGER DEFAULT 0,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP

@@ -1,4 +1,4 @@
-import {Pool} from 'pq';
+import {Pool} from 'pg';
 
 const pool = new Pool({
     user:"postgres",
