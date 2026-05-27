@@ -1,0 +1,1 @@
+/usr/bin/postgres "-D" "/home/osleepy/Documents/mtr/url-shortner/.db_data" "-k" "/home/osleepy/Documents/mtr/url-shortner/.db_data"

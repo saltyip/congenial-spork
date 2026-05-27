@@ -1,15 +1,17 @@
 import colors from 'colors';
 
-const logger = (req,res,next) =>{
-    const methodcolor = {
-        GET:"green",
-        POST:"blue"
+const logger = (req, res, next) => {
+    const methodColor = {
+        GET: 'green',
+        POST: 'blue',
+        PUT: 'yellow',
+        DELETE: 'red'
     };
 
-    const color = methodcolor[req.method] || white;
-    console.log(`${req.method} ${req.protocol}:://${req.get('host')}${req.originalUrl}`[color]);
+    const color = methodColor[req.method] || 'white';
+    const timestamp = new Date().toISOString();
+    console.log(`[${timestamp}] ${req.method} ${req.protocol}://${req.get('host')}${req.originalUrl}`[color]);
     next();
 };
-
 
 export default logger;

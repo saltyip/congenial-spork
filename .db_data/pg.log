@@ -1,0 +1,20 @@
+2026-05-23 20:54:09.415 IST [52002] LOG:  starting PostgreSQL 18.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 16.1.1 20260430, 64-bit
+2026-05-23 20:54:09.418 IST [52002] LOG:  listening on IPv6 address "::1", port 5432
+2026-05-23 20:54:09.418 IST [52002] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-05-23 20:54:09.420 IST [52002] FATAL:  could not create lock file "/run/postgresql/.s.PGSQL.5432.lock": No such file or directory
+2026-05-23 20:54:09.421 IST [52002] LOG:  database system is shut down
+2026-05-23 20:54:20.042 IST [52200] LOG:  starting PostgreSQL 18.4 on x86_64-pc-linux-gnu, compiled by gcc (GCC) 16.1.1 20260430, 64-bit
+2026-05-23 20:54:20.045 IST [52200] LOG:  listening on IPv6 address "::1", port 5432
+2026-05-23 20:54:20.045 IST [52200] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2026-05-23 20:54:20.049 IST [52200] LOG:  listening on Unix socket "/home/osleepy/Documents/mtr/url-shortner/.db_data/.s.PGSQL.5432"
+2026-05-23 20:54:20.059 IST [52206] LOG:  database system was shut down at 2026-05-23 20:54:00 IST
+2026-05-23 20:54:20.066 IST [52200] LOG:  database system is ready to accept connections
+2026-05-23 20:54:20.093 IST [52200] LOG:  received SIGHUP, reloading configuration files
+2026-05-23 20:59:20.198 IST [52204] LOG:  checkpoint starting: time
+2026-05-23 21:01:02.247 IST [52204] LOG:  checkpoint complete: wrote 1014 buffers (6.2%), wrote 3 SLRU buffers; 1 WAL file(s) added, 0 removed, 0 recycled; write=101.713 s, sync=0.305 s, total=102.049 s; sync files=327, longest=0.005 s, average=0.001 s; distance=4753 kB, estimate=4753 kB; lsn=0/1C08C08, redo lsn=0/1C08B78
+2026-05-23 21:36:43.640 IST [52200] LOG:  received smart shutdown request
+2026-05-23 21:36:43.642 IST [52200] LOG:  background worker "logical replication launcher" (PID 52209) exited with exit code 1
+2026-05-23 21:36:43.642 IST [52204] LOG:  shutting down
+2026-05-23 21:36:43.644 IST [52204] LOG:  checkpoint starting: shutdown immediate
+2026-05-23 21:36:43.651 IST [52204] LOG:  checkpoint complete: wrote 0 buffers (0.0%), wrote 0 SLRU buffers; 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.009 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=4277 kB; lsn=0/1C08CB8, redo lsn=0/1C08CB8
+2026-05-23 21:36:43.664 IST [52200] LOG:  database system is shut down

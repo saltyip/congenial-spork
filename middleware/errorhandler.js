@@ -1,10 +1,16 @@
-const errorhandler = (err,req,res,next) =>{
-    if(err.status){
-        res.status(err.status).json({msg: err.message});
+const errorhandler = (err, req, res, next) => {
+    const status = err.status || 500;
+
+    // Don't leak internal error details in production
+    const message = (status === 500 && process.env.NODE_ENV === 'production')
+        ? 'Internal server error'
+        : err.message;
+
+    if (status === 500) {
+        console.error(err);
     }
-    else{
-        res.status(500).json({msg: err.message});
-    }
+
+    res.status(status).json({ msg: message });
 };
 
 export default errorhandler;
